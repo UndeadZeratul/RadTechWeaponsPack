@@ -168,7 +168,7 @@ class HDHorseshoePistol:HDHandgun{
 	
 		}
 		if(hdw.weaponstatus[0]&HPISF_SELECTFIRE)sb.drawwepcounter(hdw.weaponstatus[0]&HPISF_FIREMODE,
-			-22,-10,"RBRSA3A7","STFULAUT"
+			-22,-10,"STSEMAUT","STFULAUT"
 		);
 		
 		//sb.drawwepnum(hdw.weaponstatus[HPISS_MAG],30);

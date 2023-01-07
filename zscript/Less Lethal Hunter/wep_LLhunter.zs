@@ -75,7 +75,7 @@ class LLHunter:HDLLShotgun{
 			sb.drawrect(-18,-14,2,3);
 		}
 		if(!(hdw.weaponstatus[0]&LL_HUNTF_EXPORT))sb.drawwepcounter(hdw.weaponstatus[LL_HUNTS_FIREMODE],
-			-26,-12,"blank","RBRSA3A7","STFULAUT"
+			-26,-12,"blank","STSEMAUT","STFULAUT"
 		);
 		sb.drawwepnum(hdw.weaponstatus[LL_HUNTS_TUBE],hdw.weaponstatus[LL_HUNTS_TUBESIZE],posy:-7);
 		for(int i=hdw.weaponstatus[SHOTS_SIDESADDLE];i>0;i--){

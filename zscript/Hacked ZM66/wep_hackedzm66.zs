@@ -109,7 +109,7 @@ class HackedZM66AssaultRifle:ZM66ScopeHaver{
 
 		if(!(hdw.weaponstatus[0]&ZM66HACKEDF_NOFIRESELECT))
 		sb.drawwepcounter(hdw.weaponstatus[ZM66HACKEDS_AUTO],
-			-22,-10,"RBRSA3A7","STFULAUT","STQBURST"
+			-22,-10,"STSEMAUT","STFULAUT","STQBURST"
 		);
 		if(hdw.weaponstatus[0]&ZM66HACKEDF_GRENADELOADED)sb.drawrect(-20,-14,4,2.6);
 		int lod=clamp(hdw.weaponstatus[ZM66HACKEDS_MAG]%100,0,50);

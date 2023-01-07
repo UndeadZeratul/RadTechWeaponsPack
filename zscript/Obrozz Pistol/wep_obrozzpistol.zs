@@ -147,7 +147,7 @@ action void A_CheckRifleHand()
 		}
 		sb.drawwepnum(hdw.weaponstatus[OBROZZS_MAG],10);
 		sb.drawwepcounter(hdw.weaponstatus[OBROZZS_CHAMBER],
-			-16,-10,"blank","RBRSA1A5","RBRSA3A7","RBRSA4A6"
+			-16,-10,"blank","STRNDFRD","STRNDCMB","STRNDJAM"
 		);
 		sb.drawstring(
 			sb.mAmountFont,string.format("%.1f",hdw.weaponstatus[OBROZZS_ZOOM]*0.1),

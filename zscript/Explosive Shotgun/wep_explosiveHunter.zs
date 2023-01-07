@@ -99,7 +99,7 @@ override void failedpickupunload(){
 			sb.drawrect(-18,-14,2,3);
 		}
 		if(!(hdw.weaponstatus[0]&EXHUNTF_EXPORT))sb.drawwepcounter(hdw.weaponstatus[EXHUNTS_FIREMODE],
-			-26,-12,"blank","RBRSA3A7","STFULAUT"
+			-26,-12,"blank","STSEMAUT","STFULAUT"
 		);
 		sb.drawwepnum(hdw.weaponstatus[EXHUNTS_TUBE],hdw.weaponstatus[EXHUNTS_TUBESIZE],posy:-7);
 		for(int i=hdw.weaponstatus[EXSHOTS_SIDESADDLE];i>0;i--){

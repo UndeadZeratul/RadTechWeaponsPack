@@ -97,7 +97,7 @@ class DoomHunter:HDShotgun{
 			sb.drawrect(-18,-14,2,3);
 		}
 		if(!(hdw.weaponstatus[0]&DHUNF_EXPORT))sb.drawwepcounter(hdw.weaponstatus[DHUNS_FIREMODE],
-			-26,-12,"blank","RBRSA3A7","STFULAUT"
+			-26,-12,"blank","STSEMAUT","STFULAUT"
 		);
 		sb.drawwepnum(hdw.weaponstatus[DHUNS_TUBE],hdw.weaponstatus[DHUNS_TUBESIZE],posy:-7);
 		for(int i=hdw.weaponstatus[SHOTS_SIDESADDLE];i>0;i--){

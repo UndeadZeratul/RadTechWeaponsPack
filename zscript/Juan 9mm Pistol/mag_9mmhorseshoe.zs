@@ -28,7 +28,7 @@ class HDHorseshoe9m:HDMagAmmo{
 			magsprite = "HSMGA0";
 		else
 			magsprite = "HSMGC0";
-		return magsprite,"PBRSA0","HDPistolAmmo",1.5;
+		return magsprite,"PRNDA0","HDPistolAmmo",1.5;
 	}
 	override void GetItemsThatUseThis(){
 		itemsthatusethis.push("HDHorseshoePistol");
