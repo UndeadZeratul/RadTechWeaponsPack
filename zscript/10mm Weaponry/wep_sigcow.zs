@@ -127,7 +127,7 @@ class HDSigCow:HDWeapon{
 		}
 
 		if(weaponstatus[SCWS_SWITCHTYPE]!=1)sb.drawwepcounter(hdw.weaponstatus[SCWS_AUTO],
-			-22,-10,"RBRSA3A7","STBURAUT","STFULAUT"
+			-22,-10,"STSEMAUT","STBURAUT","STFULAUT"
 		);
 		sb.drawwepnum(hdw.weaponstatus[SCWS_MAG],25);
 		if(hdw.weaponstatus[SCWS_CHAMBER]==2)sb.drawrect(-19,-11,3,1);

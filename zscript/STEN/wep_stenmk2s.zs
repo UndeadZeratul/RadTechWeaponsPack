@@ -80,7 +80,7 @@ class HDStenMk2:HDWeapon{
 		}
 		
 		if(weaponstatus[STENS_SWITCHTYPE]!=1)sb.drawwepcounter(hdw.weaponstatus[STENS_AUTO],
-			-22,-10,"RBRSA3A7","STBURAUT","STFULAUT"
+			-22,-10,"STSEMAUT","STBURAUT","STFULAUT"
 		);
 		
 		sb.drawwepnum(hdw.weaponstatus[STENS_MAG],30);
