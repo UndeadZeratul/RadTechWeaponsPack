@@ -677,6 +677,14 @@ sprite HUSHA0, 39, 15{
  patch HUSHA0, 0, 0
 }
 
+//empty pickup sprite
+sprite HUSHB0, 39, 15{
+ offset 20, 15
+ xscale 1.5
+ yscale 1.5
+ patch HUSHA0, 0, 0
+}
+
 //muzzle flash
 sprite PP2FA0, 41, 36{
  offset -141,-76
