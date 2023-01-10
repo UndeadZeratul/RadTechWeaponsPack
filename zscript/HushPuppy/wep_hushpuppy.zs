@@ -475,8 +475,10 @@ class HushpuppyPistol:HDHandgun{
 
 
 	spawn:
-	    HUSH A -1;
-	    stop;
+	    HUSH AB -1 nodelay{
+			if(invoker.weaponstatus[PUPPY_CHAMBER]<1)frame=1;
+			else frame=0;
+		}stop;
 	}
 	override void initializewepstats(bool idfa){
 		weaponstatus[PUPPY_MAG]=15;
