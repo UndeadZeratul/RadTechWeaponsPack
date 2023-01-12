@@ -86,28 +86,28 @@ class PlasmaFoof:HDFireball{
 	}
 	states{
 	spawn:
-        PLSS A 0 A_AlertMonsters(400);
-        PLSS ABAB 2;//extend pre-zap stage by 4 tics
+        D93S A 0 A_AlertMonsters(400);
+        D93S ABAB 2; //extend pre-zap stage by 4 tics
     zap:
-		PLSS A 0 ZapPlasma();
-		PLSS AB 2 light("PLAZMABX1");//no corkscrews
-		PLSS A 0 A_JumpIf(vel.x == 0 || vel.y == 0 || vel.z == 0, "death");//plasma sometimes gets stuck in walls if fired too close
+		D93S A 0 ZapPlasma();
+		D93S AB 2 light("PLAZMABX1");//no corkscrews
+		D93S A 0 A_JumpIf(vel.x == 0 || vel.y == 0 || vel.z == 0, "death");//plasma sometimes gets stuck in walls if fired too close
 		loop;
 	death:
-		PLSS A 0 A_SprayDecal("CacoScorch",radius*1.5);
-		PLSS A 0 A_StartSound("weapons/pbust_x",5);
-        PLSS A 0 A_AlertMonsters(400);
-        PLSS A 0 A_HDBlast(
+		D93S A 0 A_SprayDecal("CacoScorch",radius*1.5);
+		D93S A 0 A_StartSound("weapons/pbust_x",5);
+        D93S A 0 A_AlertMonsters(400);
+        D93S A 0 A_HDBlast(
 			immolateradius:32,
             immolateamount:random(8,15),
             immolatechance:50,
 			source:target
 		);
-		PLSE ABCDE 3 light("BAKAPOST1") ZapPlasma();
+		D93E ABCDE 3 light("BAKAPOST1") ZapPlasma();
 	death2:
-		PLSE E 0 ZapPlasma();
-		PLSE E 2 light("PLAZMABX2") A_FadeOut(0.3);
-		PLSE E 0 {if(!random(0,2))ArcZap(self,radius*16,16,true);}
+		D93E E 0 ZapPlasma();
+		D93E E 2 light("PLAZMABX2") A_FadeOut(0.3);
+		D93E E 0 {if(!random(0,2))ArcZap(self,radius*16,16,true);}
 		loop;
 	}
 }
@@ -129,6 +129,7 @@ class PlasmaBuster:HDCellWeapon{
 		hdweapon.refid "d93";
 		tag "$TAG_DM93PLASMA";
 	}
+	override string pickupmessage(){return Stringtable.Localize("$PICKUP_PLASMABUSTER");}
 	override bool AddSpareWeapon(actor newowner){return AddSpareWeaponRegular(newowner);}
 	override hdweapon GetSpareWeapon(actor newowner,bool reverse,bool doselect){return GetSpareWeaponRegular(newowner,reverse,doselect);}
 
@@ -136,23 +137,14 @@ class PlasmaBuster:HDCellWeapon{
 		super.tick();
 		drainheat(TBS_HEAT,12);
 	}
-
-	override string pickupmessage(){
-		return Stringtable.Localize("$PICKUP_PLASMABUSTER");
-	}
-
 	override double gunmass(){
 		return 10+(weaponstatus[TBS_BATTERY]<0?0:2);
 	}
-
 	override double weaponbulk(){
 		return 145+(weaponstatus[1]>=0?ENC_BATTERY_LOADED:0);
 	}
-
-  override string,double getpickupsprite(){return "PLASA0",1.;}
-
-
-  override void DrawHUDStuff(HDStatusBar sb,HDWeapon hdw,HDPlayerPawn hpl){
+    override string,double getpickupsprite(){return "D93PA0",1.;}
+    override void DrawHUDStuff(HDStatusBar sb,HDWeapon hdw,HDPlayerPawn hpl){
 		if(sb.hudlevel==1){
 			sb.drawbattery(-54,-4,sb.DI_SCREEN_CENTER_BOTTOM,reloadorder:true);
 			sb.drawnum(hpl.countinv("HDBattery"),-46,-8,sb.DI_SCREEN_CENTER_BOTTOM);
@@ -208,16 +200,13 @@ override void DrawSightPicture(
 
 	states{
 	ready:
-		PLSG A 1{
-			A_CheckIdSprite("THBGA0","PLSGA0");
+		D93G A 1{
 			invoker.weaponstatus[TBS_WARMUP]=0;
 
 			A_WeaponReady(WRF_ALL&~WRF_ALLOWUSER1);
 		}goto readyend;
-		PLSG AB 0;
-		PLSF AB 0;
-		THBG AB 0;
-		THBF AB 0;
+		D93G AB 0;
+		D93F AB 0;
 	fire:
 		#### A 3 offset(0,35);
 	hold:
@@ -252,8 +241,7 @@ override void DrawSightPicture(
 			A_GunFlash();
 		}goto ready;
 	flash:
-		THBF AB 0;
-		#### A 0 A_CheckIdSprite("THBFA0","PLSFA0",PSP_FLASH);
+		D93F AB 0;
 		#### A 1 bright{
 			HDFlashAlpha(64);
 			A_Light2();
@@ -302,15 +290,13 @@ override void DrawSightPicture(
   goto nope;
   
 	select0:
-		PLSG A 0{
+		D93G A 0{
 			invoker.weaponstatus[TBS_MAXRANGEDISPLAY]=int(
 				(8000+200*invoker.weaponstatus[TBS_BATTERY])/HDCONST_ONEMETRE
 			);
-			A_CheckIdSprite("THBGA0","PLSGA0");
 		}goto select0big;
 	deselect0:
-		PLSG A 0 A_CheckIdSprite("THBGA0","PLSGA0");
-		#### A 0 A_Light0();
+		D93G A 0 A_Light0();
 		goto deselect0big;
 
 	unload:
@@ -406,7 +392,7 @@ override void DrawSightPicture(
 		goto ready;
 
 	spawn:
-		PLAS A -1;
+		D93P A -1;
 		stop;
 	}
 	override void initializewepstats(bool idfa){
