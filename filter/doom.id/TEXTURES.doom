@@ -1,0 +1,53 @@
+// D-93 Plasmabuster
+sprite D93PA0, 54, 16 {
+	offset 27, 16
+	patch PLASA0, 0, 0 {}
+}
+sprite D93GA0,83,61{
+	offset -118,-107
+	patch PLSGA0,0,0{}
+}
+sprite D93GB0,104,111{
+	offset -140,-57
+	patch PLSGB0,0,0{flipx}
+}
+sprite D93FA0,83,75{
+	offset -118,-93
+	patch PLSFA0,0,0{}
+}
+sprite D93FB0,85,73{
+	offset -117,-95
+	patch PLSFB0,0,0{}
+}
+sprite D93EA0, 23, 23 {
+	offset 11, 11
+	patch PLSEA0, 0, 0 {}
+}
+sprite D93EB0, 39, 41 {
+	offset 19, 18
+	patch PLSEB0, 0, 0 {}
+}
+sprite D93EC0, 37, 35 {
+	offset 17, 18
+	patch PLSEC0, 0, 0 {}
+}
+sprite D93ED0, 29, 29 {
+	offset 13, 13
+	patch PLSED0, 0, 0 {}
+}
+sprite D93EE0, 7, 7 {
+	offset 0, 2
+	patch PLSEE0, 0, 0 {}
+}
+
+Texture "D93SA0", 18, 16
+{
+	Offset 9, 8
+	Patch "PLSSA0", 0, 0
+}
+
+Texture "D93SB0", 16, 18
+{
+	Offset 8, 9
+	Patch "PLSSB0", 0, 0
+}
