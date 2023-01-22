@@ -905,49 +905,10 @@ sprite csgbksit, 0,0
 }
 
 // Golden Single-Action Revolver
-
-sprite C45GA0,11,17{
-  xscale 2
-  yscale 2
-	offset 5, 17
-	patch C45GA0,0,0{}
-}
-
-sprite C45GB0,15,16{
-  xscale 2
-  yscale 2
-	offset 7, 16
-	patch C45GB0,0,0{}
-}
-
-
-sprite GC45A0,9,22{
-  xscale 2
-  yscale 2
-	offset 5, 22
-	patch GC45A0,0,0{}
-}
-
-sprite GSIXA0,54,22{
-  xscale 2
-  yscale 2
-	offset 27, 22
-	patch GSIXA0,0,0{}
-}
-
-sprite GLBXA0,59,27{
-  xscale 2
-  yscale 2
-	offset 28, 27
-	patch GLBXA0,0,0{}
-}
-
 sprite GSALA0,31,15{
  offset 15, 15
 	patch GSALA0,0,0{}
 }
-
-
 sprite GSAGA0,53,89{
 	offset -130,-85
 	patch gsarhand,0,48{}
