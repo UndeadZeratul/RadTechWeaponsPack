@@ -49,10 +49,10 @@ sprite mclld0, 5, 11{
 //custom quadburst symbol for Hacked ZM66
 graphic STQBURST,6,3
 {
-	patch PBRSC0G0,0,0 {}
-	patch PBRSC0G0,2,0 {}
-	patch PBRSC0G0,1,2 {}
-	patch PBRSC0G0,3,2 {}
+	patch PBRSA0,0,0{Rotate -90}
+	patch PBRSA0,2,0{Rotate -90}
+	patch PBRSA0,1,2{Rotate -90}
+	patch PBRSA0,3,2{Rotate -90}
 }
 
 //Dynamite
