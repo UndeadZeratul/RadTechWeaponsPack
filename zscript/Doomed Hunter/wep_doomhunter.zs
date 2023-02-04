@@ -333,24 +333,24 @@ override void postbeginplay(){
 		DMSG A 0 A_JumpIf(invoker.weaponstatus[0]&DHUNF_ALTHOLDING,"nope");
 		DMSG A 0 A_SetAltHold(true);
 		DMSG A 1 A_Overlay(120,"playsgco");
-		DMSG AB 2 A_MuzzleClimb(0,frandom(0.6,1.));
-		DMSG C 1 A_JumpIf(pressingaltfire(),"longstroke");
-		DMSG CB 2 A_MuzzleClimb(0,-frandom(0.6,1.));
-		DMSG B 0 A_StartSound("weapons/dhunt_short",8);
-		DMSG A 0 A_Refire("ready");
+		DMSG AE 2 A_MuzzleClimb(0,frandom(0.6,1.));
+		DMSG E 1 A_JumpIf(pressingaltfire(),"longstroke");
+		DMSG EA 2 A_MuzzleClimb(0,-frandom(0.6,1.));
+		DMSG E 0 A_StartSound("weapons/dhunt_short",8);
+		DMSG E 0 A_Refire("ready");
 		goto ready;
 	longstroke:
-		DMSG D 1 A_MuzzleClimb(frandom(1.,2.));
-		DMSG D 0{
+		DMSG F 1 A_MuzzleClimb(frandom(1.,2.));
+		DMSG F 0{
 			A_Chamber();
 			A_MuzzleClimb(-frandom(1.,2.));
 		}
 	racked:
-		DMSG D 1 A_WeaponReady(WRF_NOFIRE);
-		DMSG D 0 A_JumpIf(!pressingaltfire(),"unrack");
-		DMSG D 0 A_JumpIf(pressingunload(),"rackunload");
-		DMSG D 0 A_JumpIf(invoker.weaponstatus[DHUNS_CHAMBER],"racked");
-		DMSG D 0{
+		DMSG F 1 A_WeaponReady(WRF_NOFIRE);
+		DMSG F 0 A_JumpIf(!pressingaltfire(),"unrack");
+		DMSG F 0 A_JumpIf(pressingunload(),"rackunload");
+		DMSG F 0 A_JumpIf(invoker.weaponstatus[DHUNS_CHAMBER],"racked");
+		DMSG F 0{
 			int rld=0;
 			if(pressingreload()){
 				rld=1;
@@ -371,39 +371,39 @@ override void postbeginplay(){
 		}
 		loop;
 	rackreload:
-		DMSG D 1 offset(-1,35) A_WeaponBusy(true);
-		DMSG D 2 offset(-2,37);
-		DMSG D 4 offset(-3,40);
-		DMSG D 1 offset(-4,42) A_GrabShells(1,true,true);
-		DMSG D 0 A_JumpIf(!(invoker.weaponstatus[0]&DHUNF_FROMPOCKETS),"rackloadone");
-		DMSG D 6 offset(-5,43);
-		DMSG D 6 offset(-4,41) A_StartSound("weapons/pocket",9);
+		DMSG F 1 offset(-1,35) A_WeaponBusy(true);
+		DMSG F 2 offset(-2,37);
+		DMSG F 4 offset(-3,40);
+		DMSG F 1 offset(-4,42) A_GrabShells(1,true,true);
+		DMSG F 0 A_JumpIf(!(invoker.weaponstatus[0]&DHUNF_FROMPOCKETS),"rackloadone");
+		DMSG F 6 offset(-5,43);
+		DMSG F 6 offset(-4,41) A_StartSound("weapons/pocket",9);
 	rackloadone:
-		DMSG D 1 offset(-4,42);
-		DMSG D 2 offset(-4,41);
-		DMSG D 3 offset(-4,40){
+		DMSG F 1 offset(-4,42);
+		DMSG F 2 offset(-4,41);
+		DMSG F 3 offset(-4,40){
 			A_StartSound("weapons/dhunt_reload",8,CHANF_OVERLAP);
 			invoker.weaponstatus[DHUNS_CHAMBER]=2;
 			invoker.handshells--;
 			EmptyHand(careful:true);
 		}
-		DMSG D 5 offset(-4,41);
-		DMSG D 4 offset(-4,40) A_JumpIf(invoker.handshells>0,"rackloadone");
+		DMSG F 5 offset(-4,41);
+		DMSG F 4 offset(-4,40) A_JumpIf(invoker.handshells>0,"rackloadone");
 		goto rackreloadend;
 	rackreloadend:
-		DMSG D 1 offset(-3,39);
-		DMSG D 1 offset(-2,37);
-		DMSG D 1 offset(-1,34);
-		DMSG D 0 A_WeaponBusy(false);
+		DMSG F 1 offset(-3,39);
+		DMSG F 1 offset(-2,37);
+		DMSG F 1 offset(-1,34);
+		DMSG F 0 A_WeaponBusy(false);
 		goto racked;
 
 	rackunload:
-		DMSG D 1 offset(-1,35) A_WeaponBusy(true);
-		DMSG D 2 offset(-2,37);
-		DMSG D 4 offset(-3,40);
-		DMSG D 1 offset(-4,42);
-		DMSG D 2 offset(-4,41);
-		DMSG D 3 offset(-4,40){
+		DMSG F 1 offset(-1,35) A_WeaponBusy(true);
+		DMSG F 2 offset(-2,37);
+		DMSG F 4 offset(-3,40);
+		DMSG F 1 offset(-4,42);
+		DMSG F 2 offset(-4,41);
+		DMSG F 3 offset(-4,40){
 			int chm=invoker.weaponstatus[DHUNS_CHAMBER];
 			invoker.weaponstatus[DHUNS_CHAMBER]=0;
 			if(chm==2){
@@ -418,14 +418,14 @@ override void postbeginplay(){
 			);
 			if(chm)A_StartSound("weapons/dhunt_reload",8,CHANF_OVERLAP);
 		}
-		DMSG D 5 offset(-4,41);
-		DMSG D 4 offset(-4,40) A_JumpIf(invoker.handshells>0,"rackloadone");
+		DMSG F 5 offset(-4,41);
+		DMSG F 4 offset(-4,40) A_JumpIf(invoker.handshells>0,"rackloadone");
 		goto rackreloadend;
 
 	unrack:  //this is also important
-		DMSG D 0 A_Overlay(120,"playsgco2");
-		DMSG C 2 A_JumpIf(!pressingfire(),1);
-		DMSG BA 2{
+		DMSG F 0 A_Overlay(120,"playsgco2");
+		DMSG E 2 A_JumpIf(!pressingfire(),1);
+		DMSG EA 2{
 			if(pressingfire())A_SetTics(1);
 			A_MuzzleClimb(0,-frandom(0.6,1.));
 		}
