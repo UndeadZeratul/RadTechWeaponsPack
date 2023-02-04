@@ -350,24 +350,24 @@ class DoomHunter:HDShotgun{
 		SHTG A 0 A_JumpIf(invoker.weaponstatus[0]&DHUNF_ALTHOLDING,"nope");
 		SHTG A 0 A_SetAltHold(true);
 		SHTG A 1 A_Overlay(120,"playsgco");
-		SHTG AB 2 A_MuzzleClimb(0,frandom(0.6,1.));
-		SHTG C 1 A_JumpIf(pressingaltfire(),"longstroke");
-		SHTG CB 2 A_MuzzleClimb(0,-frandom(0.6,1.));
-		SHTG B 0 A_StartSound("weapons/dhunt_short",8);
-		SHTG A 0 A_Refire("ready");
+		SHTG AE 2 A_MuzzleClimb(0,frandom(0.6,1.));
+		SHTG E 1 A_JumpIf(pressingaltfire(),"longstroke");
+		SHTG EA 2 A_MuzzleClimb(0,-frandom(0.6,1.));
+		SHTG E 0 A_StartSound("weapons/dhunt_short",8);
+		SHTG E 0 A_Refire("ready");
 		goto ready;
 	longstroke:
-		SHTG D 1 A_MuzzleClimb(frandom(1.,2.));
-		SHTG D 0{
+		SHTG F 1 A_MuzzleClimb(frandom(1.,2.));
+		SHTG F 0{
 			A_Chamber();
 			A_MuzzleClimb(-frandom(1.,2.));
 		}
 	racked:
-		SHTG D 1 A_WeaponReady(WRF_NOFIRE);
-		SHTG D 0 A_JumpIf(!pressingaltfire(),"unrack");
-		SHTG D 0 A_JumpIf(pressingunload(),"rackunload");
-		SHTG D 0 A_JumpIf(invoker.weaponstatus[DHUNS_CHAMBER],"racked");
-		SHTG D 0{
+		SHTG F 1 A_WeaponReady(WRF_NOFIRE);
+		SHTG F 0 A_JumpIf(!pressingaltfire(),"unrack");
+		SHTG F 0 A_JumpIf(pressingunload(),"rackunload");
+		SHTG F 0 A_JumpIf(invoker.weaponstatus[DHUNS_CHAMBER],"racked");
+		SHTG F 0{
 			int rld=0;
 			if(pressingreload()){
 				rld=1;
@@ -388,39 +388,39 @@ class DoomHunter:HDShotgun{
 		}
 		loop;
 	rackreload:
-		SHTG D 1 offset(-1,35) A_WeaponBusy(true);
-		SHTG D 2 offset(-2,37);
-		SHTG D 4 offset(-3,40);
-		SHTG D 1 offset(-4,42) A_GrabShells(1,true,true);
-		SHTG D 0 A_JumpIf(!(invoker.weaponstatus[0]&DHUNF_FROMPOCKETS),"rackloadone");
-		SHTG D 6 offset(-5,43);
-		SHTG D 6 offset(-4,41) A_StartSound("weapons/pocket",9);
+		SHTG F 1 offset(-1,35) A_WeaponBusy(true);
+		SHTG F 2 offset(-2,37);
+		SHTG F 4 offset(-3,40);
+		SHTG F 1 offset(-4,42) A_GrabShells(1,true,true);
+		SHTG F 0 A_JumpIf(!(invoker.weaponstatus[0]&DHUNF_FROMPOCKETS),"rackloadone");
+		SHTG F 6 offset(-5,43);
+		SHTG F 6 offset(-4,41) A_StartSound("weapons/pocket",9);
 	rackloadone:
-		SHTG D 1 offset(-4,42);
-		SHTG D 2 offset(-4,41);
-		SHTG D 3 offset(-4,40){
+		SHTG F 1 offset(-4,42);
+		SHTG F 2 offset(-4,41);
+		SHTG F 3 offset(-4,40){
 			A_StartSound("weapons/dhunt_reload",8,CHANF_OVERLAP);
 			invoker.weaponstatus[DHUNS_CHAMBER]=2;
 			invoker.handshells--;
 			EmptyHand(careful:true);
 		}
-		SHTG D 5 offset(-4,41);
-		SHTG D 4 offset(-4,40) A_JumpIf(invoker.handshells>0,"rackloadone");
+		SHTG F 5 offset(-4,41);
+		SHTG F 4 offset(-4,40) A_JumpIf(invoker.handshells>0,"rackloadone");
 		goto rackreloadend;
 	rackreloadend:
-		SHTG D 1 offset(-3,39);
-		SHTG D 1 offset(-2,37);
-		SHTG D 1 offset(-1,34);
-		SHTG D 0 A_WeaponBusy(false);
+		SHTG F 1 offset(-3,39);
+		SHTG F 1 offset(-2,37);
+		SHTG F 1 offset(-1,34);
+		SHTG F 0 A_WeaponBusy(false);
 		goto racked;
 
 	rackunload:
-		SHTG D 1 offset(-1,35) A_WeaponBusy(true);
-		SHTG D 2 offset(-2,37);
-		SHTG D 4 offset(-3,40);
-		SHTG D 1 offset(-4,42);
-		SHTG D 2 offset(-4,41);
-		SHTG D 3 offset(-4,40){
+		SHTG F 1 offset(-1,35) A_WeaponBusy(true);
+		SHTG F 2 offset(-2,37);
+		SHTG F 4 offset(-3,40);
+		SHTG F 1 offset(-4,42);
+		SHTG F 2 offset(-4,41);
+		SHTG F 3 offset(-4,40){
 			int chm=invoker.weaponstatus[DHUNS_CHAMBER];
 			invoker.weaponstatus[DHUNS_CHAMBER]=0;
 			if(chm==2){
@@ -435,14 +435,14 @@ class DoomHunter:HDShotgun{
 			);
 			if(chm)A_StartSound("weapons/dhunt_reload",8,CHANF_OVERLAP);
 		}
-		SHTG D 5 offset(-4,41);
-		SHTG D 4 offset(-4,40) A_JumpIf(invoker.handshells>0,"rackloadone");
+		SHTG F 5 offset(-4,41);
+		SHTG F 4 offset(-4,40) A_JumpIf(invoker.handshells>0,"rackloadone");
 		goto rackreloadend;
 
 	unrack:  //this is also important
-		SHTG D 0 A_Overlay(120,"playsgco2");
-		SHTG C 2 A_JumpIf(!pressingfire(),1);
-		SHTG BA 2{
+		SHTG F 0 A_Overlay(120,"playsgco2");
+		SHTG E 2 A_JumpIf(!pressingfire(),1);
+		SHTG EA 2{
 			if(pressingfire())A_SetTics(1);
 			A_MuzzleClimb(0,-frandom(0.6,1.));
 		}
