@@ -404,6 +404,23 @@ class DoomHunter:HDShotgun{
 			invoker.handshells--;
 			EmptyHand(careful:true);
 		}
+		DMSG F 5 offset(-4,41);
+		DMSG F 4 offset(-4,40) A_JumpIf(invoker.handshells>0,"rackloadone");
+		goto rackreloadend;
+	rackreloadend:
+		DMSG F 1 offset(-3,39);
+		DMSG F 1 offset(-2,37);
+		DMSG F 1 offset(-1,34);
+		DMSG F 0 A_WeaponBusy(false);
+		goto racked;
+
+	rackunload:
+		DMSG F 1 offset(-1,35) A_WeaponBusy(true);
+		DMSG F 2 offset(-2,37);
+		DMSG F 4 offset(-3,40);
+		DMSG F 1 offset(-4,42);
+		DMSG F 2 offset(-4,41);
+		DMSG F 3 offset(-4,40){
 			int chm=invoker.weaponstatus[DHUNS_CHAMBER];
 			invoker.weaponstatus[DHUNS_CHAMBER]=0;
 			if(chm==2){
