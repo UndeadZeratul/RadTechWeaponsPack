@@ -105,7 +105,7 @@ class Savage99SniperRifle:HDWeapon{
     //rifle has a built-in mechanical round counter
 	
 		sb.drawwepcounter(hdw.weaponstatus[BOSSS_CHAMBER],
-			-16,-10,"blank","RBRSA1A5","RBRSA3A7","RBRSA4A6"
+			-16,-10,"blank","STRNDFRD","STRNDCMB","STRNDJAM"
 		);
 	    sb.drawstring(
 			sb.mAmountFont,string.format("%.1f",hdw.weaponstatus[BOSSS_ZOOM]*0.1),
