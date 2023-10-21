@@ -130,7 +130,7 @@ class HDPPSh41 :HDWeapon{//this shouldn't inherit from HDHandgun, that was an ov
 	  
 	  //firemode setting
 		sb.drawwepcounter(hdw.weaponstatus[0]&PPSHF_FIREMODE,
-			-22,-10,"RBRSA3A7","STFULAUT"
+			-22,-10,"STSEMAUT","STFULAUT"
 		);
 		
 		//main ammobar
