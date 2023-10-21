@@ -151,7 +151,7 @@ class HDTT33Pistol:HDHandgun{
 			sb.drawnum(hpl.countinv("HDTokarevMag8"),-43,-8,sb.DI_SCREEN_CENTER_BOTTOM);
 		}
 		if(hdw.weaponstatus[0]&PISF_SELECTFIRE)sb.drawwepcounter(hdw.weaponstatus[0]&PISF_FIREMODE,
-			-22,-10,"RBRSA3A7","STFULAUT"
+			-22,-10,"STSEMAUT","STFULAUT"
 		);
 		sb.drawwepnum(hdw.weaponstatus[PISS_MAG],8);
 		if(hdw.weaponstatus[PISS_CHAMBER]==2)sb.drawrect(-19,-11,3,1);
