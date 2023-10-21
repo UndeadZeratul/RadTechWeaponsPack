@@ -116,7 +116,7 @@ class HDPPSh41 :HDHandgun{
 		}
 	
 		sb.drawwepcounter(hdw.weaponstatus[0]&PPSHF_FIREMODE,
-			-22,-10,"RBRSA3A7","STFULAUT"
+			-22,-10,"STSEMAUT","STFULAUT"
 		);
 		sb.drawwepnum(hdw.weaponstatus[PPSHS_MAG],
 		              hdw.weaponstatus[PPSHS_MAG]>35?
