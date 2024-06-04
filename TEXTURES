@@ -193,7 +193,7 @@ sprite COPVE0, 320, 240{
   patch COPDE0, 0, 0{flipx}
 }
 
-//chambered round sprites
+//chambered 9mm round sprites
 
 //used on E frame, when
 //chamber fully open
@@ -232,6 +232,48 @@ sprite CPD4B0, 7, 5{
 offset -152, -102
 patch "coprnd4", 0, 0
 }
+
+//chambered .355 round sprites
+
+//used on E frame, when
+//chamber fully open
+sprite CPD1C0, 7, 6{
+offset -152, -92
+patch "coprnd1", 0, 0
+}
+sprite CPD2C0, 7, 6{
+offset -161, -92
+patch "coprnd1", 0, 0
+}
+sprite CPD3C0, 7, 6{
+offset -161, -100
+patch "coprnd1", 0, 0
+}
+sprite CPD4C0, 7, 6{
+offset -152, -100
+patch "coprnd1", 0, 0
+}
+
+//used on D frame, when
+//chamber is half-open
+sprite CPD1D0, 7, 6{
+offset -152, -94
+patch "coprnd1", 0, 0
+}
+sprite CPD2D0, 7, 6{
+offset -161, -94
+patch "coprnd1", 0, 0
+}
+sprite CPD3D0, 7, 5{
+offset -161, -102
+patch "coprnd3", 0, 0
+}
+sprite CPD4D0, 7, 5{
+offset -152, -102
+patch "coprnd4", 0, 0
+}
+
+
 
 // Savage 99
 

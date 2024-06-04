@@ -447,10 +447,10 @@ class COP357Pistol:HDHandgun{
 		let thissprite=player.getpsprite(COPS_OVRCYL+rndnm);
 		switch(gunframe){
 		case 3: //D, half-open
-			thissprite.frame=1;//use B frame
+			thissprite.frame=invoker.weaponstatus[rndnm] - 2 > 0 ? 3 : 1;//use B frame if 9mm, D frame if .355
 			break;
 		case 4: //E, fully open
-			thissprite.frame=0;//use A frame
+			thissprite.frame=invoker.weaponstatus[rndnm] - 2 > 0 ? 2 : 0;//use A frame if 9mm, C frame if .355
 			break;
 		default:
 			thissprite.sprite=getspriteindex("TNT1A0");
