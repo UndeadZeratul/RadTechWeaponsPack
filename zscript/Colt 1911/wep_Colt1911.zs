@@ -29,7 +29,7 @@ class HDColt1911:HDHandgun{
 
 	override double weaponbulk(){
 		int mgg=weaponstatus[PISS_MAG];
-		return 40+(mgg<0?0:(ENC_1911MAG_LOADED+mgg*HD45ACPAmmo.EncRoundLoaded));
+		return 40+(mgg<0?0:(ENC_1911MAG_LOADED+mgg*ENC_45ACPLOADED));
 	}
 	override double gunmass(){
 		int mgg=weaponstatus[PISS_MAG];
@@ -495,7 +495,7 @@ class HDColt1911:HDHandgun{
 // Colt 1911 Ammo (Just the magazines)
 // ------------------------------------------------------------
 
-const enc_1911MAG=HD45ACPAmmo.EncRoundLoaded*8;
+const enc_1911MAG=ENC_45ACPLOADED*8;
 
 const enc_1911MAG_EMPTY=enc_1911MAG*0.3;
 
@@ -509,7 +509,7 @@ class HDColtMag7:HDMagAmmo{
 		//$Sprite "CMG7A0"
 		hdmagammo.maxperunit 7;
 		hdmagammo.roundtype "HD45ACPAmmo";
-		hdmagammo.roundbulk HD45ACPAmmo.EncRoundLoaded;
+		hdmagammo.roundbulk ENC_45ACPLOADED;
 		hdmagammo.magbulk enc_1911MAG_EMPTY;
 		tag "$TAG_CM7";
 		inventory.pickupmessage "$PICKUP_CM7";

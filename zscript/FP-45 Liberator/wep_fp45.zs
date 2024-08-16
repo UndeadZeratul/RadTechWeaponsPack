@@ -29,8 +29,8 @@ class HDFP45:HDHandgun{
 	override hdweapon GetSpareWeapon(actor newowner,bool reverse,bool doselect){return GetSpareWeaponRegular(newowner,reverse,doselect);}
 
 	override double weaponbulk(){
-		return 20+(weaponstatus[FP45_CHAMBER]>1?HD45ACPAmmo.EncRoundLoaded:0)
-	             +(weaponstatus[FP45_SPAREROUNDS]*HD45ACPAmmo.EncRoundLoaded);
+		return 20+(weaponstatus[FP45_CHAMBER]>1?ENC_45ACPLOADED:0)
+	             +(weaponstatus[FP45_SPAREROUNDS]*ENC_45ACPLOADED);
 	}//hardly weighs a thing, it's mostly stamped sheet metal
 	override double gunmass(){
 		return 6+(weaponstatus[FP45_SPAREROUNDS]*0.25);
