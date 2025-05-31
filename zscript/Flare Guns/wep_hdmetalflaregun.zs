@@ -661,3 +661,12 @@ swappistols:
 		stop;
 	}
 }
+
+class WildMetalFlareGun : WildFlareGun
+{
+
+    default
+    {
+        wildflaregun.weaponToSpawn 'MetalFireBlooper';
+    }
+}

@@ -15,183 +15,183 @@
 
 // Plastic
 server bool fl_weapon_allowBackpacks = true;
-server int  fl_weapon_spawn_bias = 19;
-server int  fl_weapon_drop_chance_bias = 19;
+server float fl_weapon_spawn_bias = 13;
+server float fl_weapon_drop_chance_bias = 0.3;
 server bool fl_weapon_persistent_spawning = false;
 // Metal
 server bool fl_metal_allowBackpacks = true;
-server int  fl_metal_spawn_bias = 49;
-server int  fl_metal_drop_chance_bias = 49;
+server float fl_metal_spawn_bias = 5;
+server float fl_metal_drop_chance_bias = 0.12;
 server bool fl_metal_persistent_spawning = false;
 
 //Hush Puppy Silenced Pistol
 server bool hushpuppy_allowBackpacks = true;
-server int hushpuppy_pistol_spawn_bias = 19;
-server int hushpuppy_clipbox_spawn_bias = 19;
+server float hushpuppy_pistol_spawn_bias = 0.3;
+server float hushpuppy_clipbox_spawn_bias = 1.4;
 server bool hushpuppy_persistent_spawning = false;
 
 //Frag Cannon
 server bool fragcannon_allowBackpacks = true;
-server int fragcannon_spawn_bias = 19;
+server float fragcannon_spawn_bias = 1.05;
 server bool fragcannon_persistent_spawning = false;
 
 //Stun Gun
 server bool stungun_allowBackpacks = true;
-server int stungun_spawn_bias = 19;
+server float stungun_spawn_bias = 0.05;
 server bool stungun_persistent_spawning = false;
 
 //Phazer Pistol
 server bool phazer_allowBackpacks = true;
-server int phazer_pistol_spawn_bias = 19;
-server int phazer_clipbox_spawn_bias = 19;
+server float phazer_pistol_spawn_bias = 0.3;
+server float phazer_clipbox_spawn_bias = 1.4;
 server bool phazer_persistent_spawning = false;
 
 //Micro-Cell Ammo
 server bool microcell_allowBackpacks = true;
-server int microcell_shell_spawn_bias = 19;
-server int microcell_battery_spawn_bias = 19;
+server float microcell_shell_spawn_bias = 1.15;
+server float microcell_battery_spawn_bias = 0.65;
 server bool microcell_persistent_spawning = false;
 
 // Dynamite
 server bool dynamite_allowBackpacks = true;
-server int dynamite_spawn_bias = 19;
+server float dynamite_spawn_bias = 0.05;
 server bool dynamite_persistent_spawning = false;
 
 // Colt 1911
 server bool colt1911_allowBackpacks = true;
 server bool colt1911mag_allowBackpacks = true;
-server int colt1911_pistol_spawn_bias = 19;
-server int colt1911_clipbox_spawn_bias = 19;
-server int colt1911mag_clipmag_spawn_bias = 19;
+server float colt1911_pistol_spawn_bias = 0.3;
+server float colt1911_clipbox_spawn_bias = 1.4;
+server float colt1911mag_clipmag_spawn_bias = 1.7;
 server bool colt1911_persistent_spawning = false;
 
 //TT-33 Tokarev Pistol
 server bool tt33_allowBackpacks = true;
 server bool tt33mag_allowBackpacks = true;
-server int tt33_pistol_spawn_bias = 19;
-server int tt33_clipbox_spawn_bias = 19;
-server int tt33mag_clipmag_spawn_bias = 19;
+server float tt33_pistol_spawn_bias = 0.3;
+server float tt33_clipbox_spawn_bias = 1.4;
+server float tt33mag_clipmag_spawn_bias = 1.7;
 server bool tt33_persistent_spawning = false;
 
 // PPSh-41 
 server bool ppsh41_allowBackpacks = true;
 server bool ppsh41mag_allowBackpacks = true;
-server int ppsh41_clipbox_spawn_bias = 19;
-server int ppsh41mag_clipmag_spawn_bias = 19;
+server float ppsh41_clipbox_spawn_bias = 1.4;
+server float ppsh41mag_clipmag_spawn_bias = 1.7;
 server bool ppsh41_persistent_spawning = false;
 
 // STEN Mk. 2(S)
 server bool sten_allowBackpacks = true;
-server int sten_clipbox_spawn_bias = 19;
+server float sten_clipbox_spawn_bias = 1.4;
 server bool sten_persistent_spawning = false;
 
 // Juan
 server bool ja_weapon_allowBackpacks = true;
 server bool jamag_allowBackpacks = true;
-server int ja_weapon_spawn_bias = 19;
-server int jamag_spawn_bias = 9;
-server int ja_firemode_chance_bias = 49;
-server int ja_weapon_drop_chance_bias = 49;
+server float ja_weapon_spawn_bias = 0.3;
+server float jamag_spawn_bias = 3.4;
+server float ja_firemode_chance_bias = 0.02;
+server float ja_weapon_drop_chance_bias = 0.12;
 server bool ja_persistent_spawning = false;
 
 // Doomed Hunter
 server bool dHunt_allowBackpacks = true;
-server int dHunt_hunter_spawn_bias = 19;
+server float dHunt_hunter_spawn_bias = 0.5;
 server bool dHunt_persistent_spawning = false;
 
 // Plasma Buster
 server bool pbuster_allowBackpacks = true;
-server int pbuster_plasma_spawn_bias = 19;
-server int pbuster_cpack_spawn_bias = 19;
+server float pbuster_plasma_spawn_bias = 0.35;
+server float pbuster_cpack_spawn_bias = 0.8;
 server bool pbuster_persistent_spawning = false;
 
 // Combat Shotgun
 server bool cshotgun_allowBackpacks = true;
-server int cshotgun_hunter_spawn_bias = 24;
+server float cshotgun_hunter_spawn_bias = 0.4;
 server bool cshotgun_persistent_spawning = false;
 
 // Savage 99
 server bool savage99_allowBackpacks = true;
-server int savage99_hunter_spawn_bias = 24;
+server float savage99_hunter_spawn_bias = 0.4;
 server bool savage99_persistent_spawning = false;
 
 // FP-45 'Liberator'
 server bool fp45_allowBackpacks = true;
-server int fp45_pistol_spawn_bias = 49;
-server int fp45_clipbox_spawn_bias = 49;
+server float fp45_pistol_spawn_bias = 0.12;
+server float fp45_clipbox_spawn_bias = 0.56;
 server bool fp45_persistent_spawning = false;
 
 // Sigcow
 server bool sigcow_allowBackpacks = true;
 server bool sigcowmag_allowBackpacks = true;
-server int sigcow_clipbox_spawn_bias = 9;
-server int sigcowmag_clipmag_spawn_bias = 9;
+server float sigcow_clipbox_spawn_bias = 2.8;
+server float sigcowmag_clipmag_spawn_bias = 3.4;
 server bool sigcow_persistent_spawning = false;
 
 // 10mm Pistol
 server bool tenpis_allowBackpacks = true;
 server bool tenpismag_allowBackpacks = true;
-server int tenpis_pistol_spawn_bias = 19;
-server int tenpis_clipbox_spawn_bias = 19;
-server int tenpismag_clipmag_spawn_bias = 19;
+server float tenpis_pistol_spawn_bias = 0.3;
+server float tenpis_clipbox_spawn_bias = 1.4;
+server float tenpismag_clipmag_spawn_bias = 1.7;
 server bool tenpis_persistent_spawning = false;
 server bool tenpismag_persistent_spawning = false;
 
 // Snubnose
 server bool snose_allowBackpacks = true;
-server int snose_revolver_spawn_bias = 19;
-server int snose_hunter_spawn_bias = 19;
+server float snose_revolver_spawn_bias = 0.3;
+server float snose_hunter_spawn_bias = 0.5;
 server bool snose_persistent_spawning = false;
 
 // C.O.P. .357
 server bool cop_allowBackpacks = true;
-server int cop_revolver_spawn_bias = 19;
-server int cop_hunter_spawn_bias = 19;
+server float cop_revolver_spawn_bias = 0.3;
+server float cop_hunter_spawn_bias = 0.5;
 server bool cop_persistent_spawning = false;
 
 // Minerva
 server bool minerva_allowBackpacks = true;
-server int minerva_chaingun_spawn_bias = 24;
-server int minerva_clipbox_spawn_bias = 19;
+server float minerva_chaingun_spawn_bias = 0.52;
+server float minerva_clipbox_spawn_bias = 1.4;
 server bool minerva_persistent_spawning = false;
 
 // Less Lethal Hunter
 server bool llh_allowBackpacks = true;
-server int llh_hunter_spawn_bias = 49;
+server float llh_hunter_spawn_bias = 0.2;
 server bool llh_persistent_spawning = false;
 
 // Hacked ZM66
 server bool hacked_zm66_allowBackpacks = true;
-server int hacked_zm66_zm66_spawn_bias = 24;
-server int hacked_zm66_clipbox_spawn_bias = 24;
+server float hacked_zm66_zm66_spawn_bias = 0.04;
+server float hacked_zm66_clipbox_spawn_bias = 1.12;
 server bool hacked_persistent_spawning = false;
 
 // Obrozz Pistol
 server bool obrozz_allowBackpacks = true;
-server int obrozz_boss_spawn_bias = 24;
-server int obrozz_clipbox_spawn_bias = 24;
+server float obrozz_boss_spawn_bias = 0.04;
+server float obrozz_clipbox_spawn_bias = 1.12;
 server bool obrozz_persistent_spawning = false;
 
 // Explosive Shotgun
 server bool esg_allowBackpacks = true;
-server int esg_hunter_spawn_bias = 49;
+server float esg_hunter_spawn_bias = 0.2;
 server bool esg_persistent_spawning = false;
 
 // Duck Hunter
 server bool duckhunt_allowBackpacks = true;
-server int duckhunt_hunter_spawn_bias = 49;
+server float duckhunt_hunter_spawn_bias = 0.2;
 server bool duckhunt_persistent_spawning = false;
 
 // Single-Action Revolver
 server bool sa_allowBackpacks = true;
-server int sa_revolver_spawn_bias = 24;
-server int sa_hunter_spawn_bias = 24;
+server float sa_revolver_spawn_bias = 0.24;
+server float sa_hunter_spawn_bias = 0.4;
 server bool sa_persistent_spawning = false;
 
 // Gold Single-Action Revolver
 server bool gsa_allowBackpacks = true;
-server int gsa_revolver_spawn_bias = 99;
-server int gsa_slayer_spawn_bias = 99;
+server float gsa_revolver_spawn_bias = 0.06;
+server float gsa_slayer_spawn_bias = 0.14;
 server bool gsa_persistent_spawning = false;
 
 // Reloading Devices

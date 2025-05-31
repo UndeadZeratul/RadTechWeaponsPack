@@ -533,7 +533,7 @@ MENU_JUANTEXT2 = "Control chance 'Juan' pistols drop from enemies.";
 MENU_JUANTEXT3 = "Control the rarity of selectfire 'Juan' pistols.";
 MENU_JUANTEXT4 = "Control the spawn rate of 'Juan' magazines.";
 MENU_JUANBACKPACK = "Control whether the 'Juan' pistols spawn in Backpacks";
-MENU_JUANMAGBACKPACK = "Control whether the 'Juan' pistols spawn in Backpacks & Ammo Boxes";
+MENU_JUANMAGBACKPACK = "Control whether the 'Juan' magazines spawn in Backpacks & Ammo Boxes";
 
 MENU_JUANLORE1 = "A variant of the standard-issue pistol, albeit with a non-standard 'horseshoe' magazine.";
 MENU_JUANLORE2 = "As the name suggests, it uses a unique 'horseshoe' magazine";
