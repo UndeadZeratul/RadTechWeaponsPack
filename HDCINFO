@@ -1,0 +1,210 @@
+// Weapon Backpack Spawn Pool Filters
+addBPSpawnPoolFilter => { "name": "FireBlooper", "allowed": "#fl_weapon_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "MetalFireBlooper", "allowed": "#fl_metal_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HushPuppyPistol", "allowed": "#hushpuppy_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "FragCannon", "allowed": "#fragcannon_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDStunGun", "allowed": "#stungun_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "PhazerPistol", "allowed": "#phazer_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDColt1911", "allowed": "#colt1911_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDPPSh41", "allowed": "#ppsh41_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDStenMk2", "allowed": "#sten_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDHorseshoePistol", "allowed": "#ja_weapon_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "DoomHunter", "allowed": "#dHunt_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "PlasmaBuster", "allowed": "#pbuster_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDCombatShotgun", "allowed": "#cshotgun_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "Savage99SniperRifle", "allowed": "#savage99_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDSigcow", "allowed": "#sigcow_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HD10mmPistol", "allowed": "#tenpis_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDSnubNoseRevolver", "allowed": "#snose_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "COP357Pistol", "allowed": "#cop_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "MinervaChaingun", "allowed": "#minerva_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "LLHunter", "allowed": "#llh_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HackedZM66AssaultRifle", "allowed": "#hacked_zm66_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "ObrozzPistol", "allowed": "#obrozz_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "ExplosiveHunter", "allowed": "#esg_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "DuckHunter", "allowed": "#duckhunt_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDSingleActionRevolver", "allowed": "#sa_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDGoldSingleActionRevolver", "allowed": "#gsa_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDTT33Pistol", "allowed": "#tt33_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDFP45", "allowed": "#fp45_allowBackpacks" }
+
+// Ammo Backpack Spawn Pool Filters
+addBPSpawnPoolFilter => { "name": "HDMicroCell", "allowed": "#microcell_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDDynamiteAmmo", "allowed": "#dynamite_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDColtMag7", "allowed": "#colt1911mag_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDTokarevMag8", "allowed": "#tt33mag_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDTokarevMag35", "allowed": "#ppsh41mag_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDTokarevMag71", "allowed": "#ppsh41mag_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDHorseshoe9m", "allowed": "#jamag_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HD10mMag8", "allowed": "#tenpismag_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HD10mMag25", "allowed": "#sigcowmag_allowBackpacks" }
+
+// Item Backpack Spawn Pool Filters
+addBPSpawnPoolFilter => { "name": "TenMilAutoReloader", "allowed": "#reloader10mm_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "SavageAutoReloader", "allowed": "#reloader300S_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "TokarevAutoReloader", "allowed": "#reloader762_allowBackpacks" }
+
+// Weapon Spawn Pools
+addSpawnTableSingleEntry => { "tableName": "ChainsawReplaces", "name": "HDStunGun", "weight": "#stungun_spawn_bias", "persists": "false" }
+addSpawnTableSingleEntry => { "tableName": "PistolReplaces", "name": "PhazerPistol", "weight": "#phazer_pistol_spawn_bias", "persists": "#phazer_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipBoxReplaces", "name": "PhazerPistol", "weight": "#phazer_clipbox_spawn_bias", "persists": "#phazer_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "PlasmaRifleReplaces", "name": "PlasmaBuster", "weight": "#pbuster_plasma_spawn_bias", "persists": "#pbuster_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "PistolReplaces", "name": "HushPuppyPistol", "weight": "#hushpuppy_pistol_spawn_bias", "persists": "#hushpuppy_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipBoxReplaces", "name": "HushPuppyPistol", "weight": "#hushpuppy_clipbox_spawn_bias", "persists": "#hushpuppy_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "PistolReplaces", "name": "HDColt1911Spawn", "weight": "#colt1911_pistol_spawn_bias", "persists": "#colt1911_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipBoxReplaces", "name": "HDColt1911Spawn", "weight": "#colt1911_clipbox_spawn_bias", "persists": "#colt1911_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "PistolReplaces", "name": "HD10mmPistol", "weight": "#tenpis_pistol_spawn_bias", "persists": "#tenpis_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipBoxReplaces", "name": "HD10mmPistol", "weight": "#tenpis_clipbox_spawn_bias", "persists": "#tenpis_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "PistolReplaces", "name": "TT33Spawn", "weight": "#tt33_pistol_spawn_bias", "persists": "#tt33_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipBoxReplaces", "name": "TT33Spawn", "weight": "#tt33_clipbox_spawn_bias", "persists": "#tt33_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipBoxReplaces", "name": "ObrozzSpawner", "weight": "#obrozz_clipbox_spawn_bias", "persists": "#obrozz_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "PistolReplaces", "name": "HDFP45Spawn", "weight": "#fp45_pistol_spawn_bias", "persists": "#fp45_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipBoxReplaces", "name": "HDFP45Spawn", "weight": "#fp45_clipbox_spawn_bias", "persists": "#fp45_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "PistolReplaces", "name": "SnubNoseSpawn", "weight": "#snose_revolver_spawn_bias", "persists": "#snose_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ShotgunReplaces", "name": "SnubNoseSpawn", "weight": "#snose_hunter_spawn_bias", "persists": "#snose_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "PistolReplaces", "name": "COP357Spawn", "weight": "#cop_revolver_spawn_bias", "persists": "#cop_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ShotgunReplaces", "name": "COP357Spawn", "weight": "#cop_hunter_spawn_bias", "persists": "#cop_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "PistolReplaces", "name": "SADeinoSpawn", "weight": "#sa_revolver_spawn_bias", "persists": "#sa_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ShotgunReplaces", "name": "SADeinoSpawn", "weight": "#sa_hunter_spawn_bias", "persists": "#sa_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "PistolReplaces", "name": "GoldSADeinoSpawn", "weight": "#gsa_revolver_spawn_bias", "persists": "#gsa_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "SuperShotgunReplaces", "name": "GoldSADeinoSpawn", "weight": "#gsa_hunter_spawn_bias", "persists": "#gsa_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ShotgunReplaces", "name": "HDCombatShotgunRandom", "weight": "#cshotgun_hunter_spawn_bias", "persists": "#cshotgun_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ShotgunReplaces", "name": "DoomHunterRandom", "weight": "#dHunt_hunter_spawn_bias", "persists": "#dHunt_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ShotgunReplaces", "name": "LLHunter", "weight": "#llh_hunter_spawn_bias", "persists": "#llh_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ShotgunReplaces", "name": "ExplosiveHunter", "weight": "#esg_hunter_spawn_bias", "persists": "#esg_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ShotgunReplaces", "name": "DuckHunter", "weight": "#duckhunt_hunter_spawn_bias", "persists": "#duckhunt_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ShotgunReplaces", "name": "Savage99RifleSpawner", "weight": "#savage99_hunter_spawn_bias", "persists": "#savage99_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipBoxReplaces", "name": "SigCowRandomSpawn", "weight": "#sigcow_clipbox_spawn_bias", "persists": "#sigcow_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipBoxReplaces", "name": "HackedZM66Random", "weight": "#hacked_zm66_clipbox_spawn_bias", "persists": "#hacked_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipBoxReplaces", "name": "HDSTENRandom", "weight": "#sten_clipbox_spawn_bias", "persists": "#sten_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipBoxReplaces", "name": "PapashaSpawn", "weight": "#ppsh41_clipbox_spawn_bias", "persists": "#ppsh41_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ChaingunReplaces", "name": "MinervaRandom", "weight": "#minerva_chaingun_spawn_bias", "persists": "#minerva_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipBoxReplaces", "name": "MinervaRandom", "weight": "#minerva_clipbox_spawn_bias", "persists": "#minerva_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "RocketBoxReplaces", "name": "FragCannonPickup", "weight": "#fragcannon_spawn_bias", "persists": "#fragcannon_persistent_spawning" }
+
+newSpawnTable => { "spawnName": "HunterRandom", "tableName": "Radtech.HunterSpawns", "replaces": "false" }
+addSpawnTableSingleEntry => { "tableName": "Radtech.HunterSpawns", "name": "WildFlareGun", "chance": "#fl_weapon_spawn_bias", "persists": "#fl_weapon_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "Radtech.HunterSpawns", "name": "WildMetalFlareGun", "chance": "#fl_metal_spawn_bias", "persists": "#fl_metal_persistent_spawning" }
+
+newSpawnTable => { "spawnName": "SlayerRandom", "tableName": "Radtech.SlayerSpawns", "replaces": "false" }
+addSpawnTableSingleEntry => { "tableName": "Radtech.SlayerSpawns", "name": "WildFlareGun", "chance": "#fl_weapon_spawn_bias", "persists": "#fl_weapon_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "Radtech.SlayerSpawns", "name": "WildMetalFlareGun", "chance": "#fl_metal_spawn_bias", "persists": "#fl_metal_persistent_spawning" }
+
+newSpawnTable => { "spawnName": "BossRifleSpawner", "addOriginalThing": "true", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "BossRifleSpawner", "name": "ObrozzSpawner", "weight": "#obrozz_boss_spawn_bias", "persists": "#obrozz_persistent_spawning" }
+
+newSpawnTable => { "spawnName": "ZM66Random", "addOriginalThing": "true", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "ZM66Replaces", "name": "HackedZM66Random", "weight": "#hacked_zm66_zm66_spawn_bias", "persists": "#hacked_persistent_spawning" }
+
+newSpawnTable => { "spawnName": "JuanRandom", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "JuanRandom", "name": "HDHorseshoePistol", "weight": "1", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "JuanRandom", "name": "HDHorseshoePistolAuto", "weight": "#ja_firemode_chance_bias", "persists": "true" }
+
+// Handgun Drop Table
+addSpawnTableSingleEntry => { "tableName": "HDHandgunRandomDrop", "name": "FireBlooper", "weight": "#fl_weapon_drop_chance_bias", "chance": "16", "persists": "#fl_weapon_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "HDHandgunRandomDrop", "name": "MetalFireBlooper", "weight": "#fl_metal_drop_chance_bias", "chance": "16", "persists": "#fl_weapon_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "HDHandgunRandomDrop", "name": "PhazerPistol", "weight": "#phazer_pistol_spawn_bias", "chance": "16", "persists": "#phazer_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "HDHandgunRandomDrop", "name": "HushPuppyPistol", "weight": "#hushpuppy_pistol_spawn_bias", "chance": "16", "persists": "#hushpuppy_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "HDHandgunRandomDrop", "name": "HDColt1911", "weight": "#colt1911_pistol_spawn_bias", "chance": "16", "persists": "#colt1911_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "HDHandgunRandomDrop", "name": "HD10mmPistol", "weight": "#tenpis_pistol_spawn_bias", "chance": "16", "persists": "#tenpis_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "HDHandgunRandomDrop", "name": "HDTT33Pistol", "weight": "#tt33_pistol_spawn_bias", "chance": "16", "persists": "#tt33_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "HDHandgunRandomDrop", "name": "HDFP45", "weight": "#fp45_pistol_spawn_bias", "chance": "16", "persists": "#fp45_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "HDHandgunRandomDrop", "name": "HDSnubNoseRevolver", "weight": "#snose_revolver_spawn_bias", "chance": "16", "persists": "#snose_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "HDHandgunRandomDrop", "name": "COP357Pistol", "weight": "#cop_revolver_spawn_bias", "chance": "16", "persists": "#cop_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "HDHandgunRandomDrop", "name": "HDSingleActionRevolver", "weight": "#sa_revolver_spawn_bias", "chance": "16", "persists": "#sa_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "HDHandgunRandomDrop", "name": "HDGoldSingleActionRevolver", "weight": "#gsa_revolver_spawn_bias", "chance": "16", "persists": "#gsa_persistent_spawning" }
+addSpawnTableNestedEntry => { "tableName": "HDHandgunRandomDrop", "name": "JuanRandom", "weight": "#ja_weapon_spawn_bias", "chance": "16", "persists": "true" }
+
+// Ammo Spawn Pools
+addSpawnTableSingleEntry => { "tableName": "ShellReplaces", "name": "HDMicroCell", "weight": "#microcell_shell_spawn_bias", "persists": "#microcell_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "CellReplaces", "name": "HDMicroCell", "weight": "#microcell_battery_spawn_bias", "persists": "#microcell_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipMagReplaces", "name": "HDColtMag7", "weight": "#colt1911mag_clipmag_spawn_bias", "persists": "#colt1911mag_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipMagReplaces", "name": "HD10mMag8", "weight": "#tenpismag_clipmag_spawn_bias", "persists": "#tenpismag_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipMagReplaces", "name": "HDTokarevMag8", "weight": "#tt33mag_clipmag_spawn_bias", "persists": "#tt33mag_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipMagReplaces", "name": "HD10mMag25", "weight": "#sigcowmag_clipmag_spawn_bias", "persists": "#sigcowmag_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipMagReplaces", "name": "PapashaMagSpawner", "weight": "#ppsh41mag_clipmag_spawn_bias", "persists": "#ppsh41mag_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "RocketReplaces", "name": "HDDynamiteAmmo", "weight": "#dynamite_spawn_bias", "persists": "#dynamite_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipMagReplaces", "name": "HDHorseshoe9m", "weight": "#jamag_spawn_bias", "persists": "true" }
+
+newSpawnTable => { "spawnName": "FragP", "addOriginalThing": "true", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "FragP", "name": "HDDynamiteAmmo", "weight": "#obrozz_boss_spawn_bias", "persists": "#obrozz_persistent_spawning" }
+
+newSpawnTable => { "spawnName": "HDFragGrenadePickup", "addOriginalThing": "true", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "HDFragGrenadePickup", "name": "HDDynamitePickup", "weight": "#dynamite_spawn_bias", "persists": "#dynamite_persistent_spawning" }
+
+// Ammo Usages
+addAmmoUser => { "ammoName": "HDBattery", "name": "PlasmaBuster" }
+addAmmoUser => { "ammoName": "HDBattery", "name": "MinervaChaingun" }
+addAmmoUser => { "ammoName": "HDBirdshotShellAmmo", "name": "DuckHunter" }
+addAmmoUser => { "ammoName": "HDShellAmmo", "name": "FireBlooper" }
+addAmmoUser => { "ammoName": "HDShellAmmo", "name": "MetalFireBlooper" }
+addAmmoUser => { "ammoName": "HDShellAmmo", "name": "HDCombatShotgun" }
+addAmmoUser => { "ammoName": "HDShellAmmo", "name": "DoomHunter" }
+addAmmoUser => { "ammoName": "HDLLShellAmmo", "name": "LLHunter" }
+addAmmoUser => { "ammoName": "HDFlareAmmo", "name": "FireBlooper" }
+addAmmoUser => { "ammoName": "HDFlareAmmo", "name": "MetalFireBlooper" }
+addAmmoUser => { "ammoName": "HDExplosiveShellAmmo", "name": "ExplosiveHunter" }
+addAmmoUser => { "ammoName": "HDExplosiveShellAmmo", "name": "MetalFireBlooper" }
+addAmmoUser => { "ammoName": "HDSlugAmmo", "name": "MetalFireBlooper" }
+addAmmoUser => { "ammoName": "HD10mAmmo", "name": "HD10mmPistol" }
+addAmmoUser => { "ammoName": "HD10mAmmo", "name": "HDSigcow" }
+addAmmoUser => { "ammoName": "HD10mAmmo", "name": "TenMilAutoReloader" }
+addAmmoUser => { "ammoName": "TenMilBrass", "name": "TenMilAutoReloader" }
+addAmmoUser => { "ammoName": "FourMilAmmo", "name": "HackedZM66AssaultRifle" }
+addAmmoUser => { "ammoName": "FourMilAmmo", "name": "SavageAutoReloader" }
+addAmmoUser => { "ammoName": "HD4mMag", "name": "HackedZM66AssaultRifle" }
+addAmmoUser => { "ammoName": "HDRocketAmmo", "name": "HackedZM66AssaultRifle" }
+addAmmoUser => { "ammoName": "HDPistolAmmo", "name": "MinervaChaingun" }
+addAmmoUser => { "ammoName": "HDPistolAmmo", "name": "HDSnubNoseRevolver" }
+addAmmoUser => { "ammoName": "HDPistolAmmo", "name": "TenMilAutoReloadingThingy" }
+addAmmoUser => { "ammoName": "HDPistolAmmo", "name": "TenMilAutoReloader" }
+addAmmoUser => { "ammoName": "HDPistolAmmo", "name": "HDStenMk2" }
+addAmmoUser => { "ammoName": "HDPistolAmmo", "name": "HushPuppyPistol" }
+addAmmoUser => { "ammoName": "HDPistolAmmo", "name": "HDHorseshoePistol" }
+addAmmoUser => { "ammoName": "HDPistolAmmo", "name": "COP357Pistol" }
+addAmmoUser => { "ammoName": "HD9mMag30", "name": "MinervaChaingun" }
+addAmmoUser => { "ammoName": "HD9mMag30", "name": "HDStenMk2" }
+addAmmoUser => { "ammoName": "HDHDRevolverAmmo", "name": "HDSnubNoseRevolver" }
+addAmmoUser => { "ammoName": "HDHDRevolverAmmo", "name": "COP357Pistol" }
+addAmmoUser => { "ammoName": "HD45ACPAmmo", "name": "HDColt1911" }
+addAmmoUser => { "ammoName": "HD45ACPAmmo", "name": "HDFP45" }
+addAmmoUser => { "ammoName": "HD45LCAmmo", "name": "HDSingleActionRevolver" }
+addAmmoUser => { "ammoName": "HDGold45LCAmmo", "name": "HDGoldSingleActionRevolver" }
+addAmmoUser => { "ammoName": "HD7mClip", "name": "ObrozzPistol" }
+addAmmoUser => { "ammoName": "SevenMilAmmo", "name": "ObrozzPistol" }
+addAmmoUser => { "ammoName": "SevenMilAmmoRecast", "name": "ObrozzPistol" }
+addAmmoUser => { "ammoName": "Savage300Ammo", "name": "Savage99SniperRifle" }
+addAmmoUser => { "ammoName": "Savage300Brass", "name": "Savage99SniperRifle" }
+addAmmoUser => { "ammoName": "HD762TokarevAmmo", "name": "HDTT33Pistol" }
+addAmmoUser => { "ammoName": "HD762TokarevAmmo", "name": "HDPPSh41" }
+addAmmoUser => { "ammoName": "TokarevBrass", "name": "TokarevAutoReloader" }
+
+// AceCorp Weapon Crate Filters
+addWeaponCrateFilter => { "name": "FireBlooper", "allowed": "#fl_weapon_allowBackpacks" }
+addWeaponCrateFilter => { "name": "MetalFireBlooper", "allowed": "#fl_metal_allowBackpacks" }
+addWeaponCrateFilter => { "name": "HushPuppyPistol", "allowed": "#hushpuppy_allowBackpacks" }
+addWeaponCrateFilter => { "name": "FragCannon", "allowed": "#fragcannon_allowBackpacks" }
+addWeaponCrateFilter => { "name": "HDStunGun", "allowed": "#stungun_allowBackpacks" }
+addWeaponCrateFilter => { "name": "PhazerPistol", "allowed": "#phazer_allowBackpacks" }
+addWeaponCrateFilter => { "name": "HDColt1911", "allowed": "#colt1911_allowBackpacks" }
+addWeaponCrateFilter => { "name": "HDPPSh41", "allowed": "#ppsh41_allowBackpacks" }
+addWeaponCrateFilter => { "name": "HDStenMk2", "allowed": "#sten_allowBackpacks" }
+addWeaponCrateFilter => { "name": "HDHorseshoePistol", "allowed": "#ja_weapon_allowBackpacks" }
+addWeaponCrateFilter => { "name": "DoomHunter", "allowed": "#dHunt_allowBackpacks" }
+addWeaponCrateFilter => { "name": "PlasmaBuster", "allowed": "#pbuster_allowBackpacks" }
+addWeaponCrateFilter => { "name": "HDCombatShotgun", "allowed": "#cshotgun_allowBackpacks" }
+addWeaponCrateFilter => { "name": "Savage99SniperRifle", "allowed": "#savage99_allowBackpacks" }
+addWeaponCrateFilter => { "name": "HDSigcow", "allowed": "#sigcow_allowBackpacks" }
+addWeaponCrateFilter => { "name": "HD10mmPistol", "allowed": "#tenpis_allowBackpacks" }
+addWeaponCrateFilter => { "name": "HDSnubNoseRevolver", "allowed": "#snose_allowBackpacks" }
+addWeaponCrateFilter => { "name": "COP357Pistol", "allowed": "#cop_allowBackpacks" }
+addWeaponCrateFilter => { "name": "MinervaChaingun", "allowed": "#minerva_allowBackpacks" }
+addWeaponCrateFilter => { "name": "LLHunter", "allowed": "#llh_allowBackpacks" }
+addWeaponCrateFilter => { "name": "HackedZM66AssaultRifle", "allowed": "#hacked_zm66_allowBackpacks" }
+addWeaponCrateFilter => { "name": "ObrozzPistol", "allowed": "#obrozz_allowBackpacks" }
+addWeaponCrateFilter => { "name": "ExplosiveHunter", "allowed": "#esg_allowBackpacks" }
+addWeaponCrateFilter => { "name": "DuckHunter", "allowed": "#duckhunt_allowBackpacks" }
+addWeaponCrateFilter => { "name": "HDSingleActionRevolver", "allowed": "#sa_allowBackpacks" }
+addWeaponCrateFilter => { "name": "HDGoldSingleActionRevolver", "allowed": "#gsa_allowBackpacks" }
+addWeaponCrateFilter => { "name": "HDTT33Pistol", "allowed": "#tt33_allowBackpacks" }
+addWeaponCrateFilter => { "name": "HDFP45", "allowed": "#fp45_allowBackpacks" }
