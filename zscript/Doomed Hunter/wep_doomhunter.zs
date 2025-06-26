@@ -17,6 +17,11 @@ class DoomHunter:HDShotgun{
 		hdweapon.refid "dsg";
 		tag "$TAG_DOOMHUNT";
 		obituary "$OB_DOOMSHOTGUN";
+
+		hdweapon.loadoutcodes "
+			\cutype - 0-4, export/regular/hacked/export semi/export auto
+			\cufiremode - 0-2, pump/semi/auto, subject to the above
+			\cuchoke - 0-7, 0 skeet, 7 full";
 	}
 
     override void postbeginplay(){
