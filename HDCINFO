@@ -123,7 +123,7 @@ addSpawnTableSingleEntry => { "tableName": "ClipMagReplaces", "name": "HD10mMag8
 addSpawnTableSingleEntry => { "tableName": "ClipMagReplaces", "name": "HDTokarevMag8", "weight": "#tt33mag_clipmag_spawn_bias", "persists": "#tt33mag_persistent_spawning" }
 addSpawnTableSingleEntry => { "tableName": "ClipMagReplaces", "name": "HD10mMag25", "weight": "#sigcowmag_clipmag_spawn_bias", "persists": "#sigcowmag_persistent_spawning" }
 addSpawnTableSingleEntry => { "tableName": "ClipMagReplaces", "name": "PapashaMagSpawner", "weight": "#ppsh41mag_clipmag_spawn_bias", "persists": "#ppsh41mag_persistent_spawning" }
-addSpawnTableSingleEntry => { "tableName": "RocketReplaces", "name": "HDDynamiteAmmo", "weight": "#dynamite_spawn_bias", "persists": "#dynamite_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "RocketAmmoReplaces", "name": "HDDynamiteAmmo", "weight": "#dynamite_spawn_bias", "persists": "#dynamite_persistent_spawning" }
 addSpawnTableSingleEntry => { "tableName": "ClipMagReplaces", "name": "HDHorseshoe9m", "weight": "#jamag_spawn_bias", "persists": "true" }
 
 newSpawnTable => { "spawnName": "FragP", "addOriginalThing": "true", "persists": "true" }
