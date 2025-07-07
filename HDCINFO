@@ -118,13 +118,13 @@ addSpawnTableNestedEntry => { "tableName": "HDHandgunRandomDrop", "name": "JuanR
 // Ammo Spawn Pools
 addSpawnTableSingleEntry => { "tableName": "ShellReplaces", "name": "HDMicroCell", "weight": "#microcell_shell_spawn_bias", "persists": "#microcell_persistent_spawning" }
 addSpawnTableSingleEntry => { "tableName": "CellReplaces", "name": "HDMicroCell", "weight": "#microcell_battery_spawn_bias", "persists": "#microcell_persistent_spawning" }
-addSpawnTableSingleEntry => { "tableName": "ClipMagReplaces", "name": "HDColtMag7", "weight": "#colt1911mag_clipmag_spawn_bias", "persists": "#colt1911mag_persistent_spawning" }
-addSpawnTableSingleEntry => { "tableName": "ClipMagReplaces", "name": "HD10mMag8", "weight": "#tenpismag_clipmag_spawn_bias", "persists": "#tenpismag_persistent_spawning" }
-addSpawnTableSingleEntry => { "tableName": "ClipMagReplaces", "name": "HDTokarevMag8", "weight": "#tt33mag_clipmag_spawn_bias", "persists": "#tt33mag_persistent_spawning" }
-addSpawnTableSingleEntry => { "tableName": "ClipMagReplaces", "name": "HD10mMag25", "weight": "#sigcowmag_clipmag_spawn_bias", "persists": "#sigcowmag_persistent_spawning" }
-addSpawnTableSingleEntry => { "tableName": "ClipMagReplaces", "name": "PapashaMagSpawner", "weight": "#ppsh41mag_clipmag_spawn_bias", "persists": "#ppsh41mag_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipReplaces", "name": "HDColtMag7", "weight": "#colt1911mag_clipmag_spawn_bias", "persists": "#colt1911mag_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipReplaces", "name": "HD10mMag8", "weight": "#tenpismag_clipmag_spawn_bias", "persists": "#tenpismag_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipReplaces", "name": "HDTokarevMag8", "weight": "#tt33mag_clipmag_spawn_bias", "persists": "#tt33mag_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipReplaces", "name": "HD10mMag25", "weight": "#sigcowmag_clipmag_spawn_bias", "persists": "#sigcowmag_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipReplaces", "name": "PapashaMagSpawner", "weight": "#ppsh41mag_clipmag_spawn_bias", "persists": "#ppsh41mag_persistent_spawning" }
 addSpawnTableSingleEntry => { "tableName": "RocketAmmoReplaces", "name": "HDDynamiteAmmo", "weight": "#dynamite_spawn_bias", "persists": "#dynamite_persistent_spawning" }
-addSpawnTableSingleEntry => { "tableName": "ClipMagReplaces", "name": "HDHorseshoe9m", "weight": "#jamag_spawn_bias", "persists": "true" }
+addSpawnTableSingleEntry => { "tableName": "ClipReplaces", "name": "HDHorseshoe9m", "weight": "#jamag_spawn_bias", "persists": "true" }
 
 newSpawnTable => { "spawnName": "FragP", "addOriginalThing": "true", "persists": "true" }
 addSpawnTableSingleEntry => { "tableName": "FragP", "name": "HDDynamiteAmmo", "weight": "#obrozz_boss_spawn_bias", "persists": "#obrozz_persistent_spawning" }
