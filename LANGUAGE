@@ -717,3 +717,199 @@ MENU_762RELOADERBACKPACK = "Control Whether the 7.62 Tokarev Reloading Devices s
 
 MENU_RELOADERLORE1 = "TODO: Add Lore";
 MENU_RELOADERLORE2 = "";
+
+// Merchant Store Entries
+// 10mm Pistol
+MERCH_CAT_10MMPISTOL              = "RadTech Inc.";
+MERCH_TAG_10MMPISTOL              = "10mm Pistol";
+MERCH_FLAVOR_10MMPISTOL           = "Hope your wrists can handle the recoil.";
+
+// 10mm Pistol Mag
+MERCH_CAT_10MMPISTOLMAG           = "RadTech Inc.";
+MERCH_TAG_10MMPISTOLMAG           = "10mm Pistol Magazine";
+MERCH_FLAVOR_10MMPISTOLMAG        = "";
+
+// Colt 1911
+MERCH_CAT_COLT1911                = "RadTech Inc.";
+MERCH_TAG_COLT1911                = "Colt 1911";
+MERCH_FLAVOR_COLT1911             = "Hoo-ah!";
+
+// Colt 1911 Mag
+MERCH_CAT_COLT1911MAG             = "RadTech Inc.";
+MERCH_TAG_COLT1911MAG             = "Colt 1911 Magazine";
+MERCH_FLAVOR_COLT1911MAG          = "";
+
+// Combat Shotgun
+MERCH_CAT_COMBATSHOTGUN           = "RadTech Inc.";
+MERCH_TAG_COMBATSHOTGUN           = "Combat Shotgun";
+MERCH_FLAVOR_COMBATSHOTGUN        = "Hasta la vista, baby!";
+
+// DM-93 Plasmabuster
+MERCH_CAT_D93                     = "RadTech Inc.";
+MERCH_TAG_D93                     = "DM-93 Plasma Rifle";
+MERCH_FLAVOR_D93                  = "Melting demons like it's 1993!";
+
+// Doomed Hunter
+MERCH_CAT_DOOMHUNTER              = "RadTech Inc.";
+MERCH_TAG_DOOMHUNTER              = "Doomed Shotgun";
+MERCH_FLAVOR_DOOMHUNTER           = "I have a feeling you won't be using this for duck hunting.";
+
+// Duck Hunter
+MERCH_CAT_DUCKHUNTER              = "RadTech Inc.";
+MERCH_TAG_DUCKHUNTER              = "Duck Hunter";
+MERCH_FLAVOR_DUCKHUNTER           = "Mind the retriever.";
+
+// Explosive Hunter
+MERCH_CAT_XHUNTER                 = "RadTech Inc.";
+MERCH_TAG_XHUNTER                 = "Explosive Shotgun";
+MERCH_FLAVOR_XHUNTER              = "It's like a Hunter and a Blooper had a one night stand.";
+
+// Flare Gun (Metal)
+MERCH_CAT_FLAREGUNMETAL           = "RadTech Inc.";
+MERCH_TAG_FLAREGUNMETAL           = "Steel Flare Gun";
+MERCH_FLAVOR_FLAREGUNMETAL        = "Doubles as an emergency survival shotgun.";
+
+// Flare Gun (Plastic)
+MERCH_CAT_FLAREGUN                = "RadTech Inc.";
+MERCH_TAG_FLAREGUN                = "Flare Gun";
+MERCH_FLAVOR_FLAREGUN             = "Useful for finding your way through dark places.";
+
+// FP-45
+MERCH_CAT_FP45                    = "RadTech Inc.";
+MERCH_TAG_FP45                    = "FP-45 'Liberator' Pistol";
+MERCH_FLAVOR_FP45                 = "Do you even need more than one shot?";
+
+// Frag Cannon
+MERCH_CAT_FRAGCANNON              = "RadTech Inc.";
+MERCH_TAG_FRAGCANNON              = "'Frag Cannon' Frag Grenade Launcher";
+MERCH_FLAVOR_FRAGCANNON           = "Is your arm tired?";
+
+// Golden Single Action Revolver
+MERCH_CAT_GOLDENSAREVOLVER        = "RadTech Inc.";
+MERCH_TAG_GOLDENSAREVOLVER        = "The Golden Gun";
+MERCH_FLAVOR_GOLDENSAREVOLVER     = "I don't expect these demons to talk, I expect them to die!";
+
+// Hacked ZM66
+MERCH_CAT_HZM                     = "RadTech Inc.";
+MERCH_TAG_HZM                     = "Hacked ZM66 Rifle";
+MERCH_FLAVOR_HZM                  = "Better hope Volt doesn't find out about these, or we're both screwed.";
+
+// Hush Puppy
+MERCH_CAT_HUSHPUPPY               = "RadTech Inc.";
+MERCH_TAG_HUSHPUPPY               = "'Hush Puppy' Silenced Pistol";
+MERCH_FLAVOR_HUSHPUPPY            = "It's a shame the slide sticks, though";
+
+// Juan Horeshoe Pistol
+MERCH_CAT_JUAN                    = "RadTech Inc.";
+MERCH_TAG_JUAN                    = "Juan";
+MERCH_FLAVOR_JUAN                 = "J u a n .";
+
+// Juan Horseshoe Mag
+MERCH_CAT_JUANMAG                 = "RadTech Inc.";
+MERCH_TAG_JUANMAG                 = "Juan Horseshoe Magazine";
+MERCH_FLAVOR_JUANMAG              = "";
+
+// Less-Lethal Shotgun
+MERCH_CAT_LLHUNTER                = "RadTech Inc.";
+MERCH_TAG_LLHUNTER                = "Bernoulli M1053";
+MERCH_FLAVOR_LLHUNTER             = "Whatcha gonna do with this, arrest the demons?";
+
+// Minerva
+MERCH_CAT_MINERVA                 = "RadTech Inc.";
+MERCH_TAG_MINERVA                 = "Minerva";
+MERCH_FLAVOR_MINERVA              = "She ain't no mouse , I'll tell you that much.";
+
+// Obrozz
+MERCH_CAT_OBROZZ                  = "RadTech Inc.";
+MERCH_TAG_OBROZZ                  = "'Obrozz' Sawn-Off Boss";
+MERCH_FLAVOR_OBROZZ               = "Now yer a real gunslinger.";
+
+// Phazer
+MERCH_CAT_PHAZER                  = "RadTech Inc.";
+MERCH_TAG_PHAZER                  = "'Phazer' Energy Pistol";
+MERCH_FLAVOR_PHAZER               = "Some secret agent dropped this outside some skyscraper.";
+
+// PPSh-41
+MERCH_CAT_PPSH41                  = "RadTech Inc.";
+MERCH_TAG_PPSH41                  = "PPSh-41 'Papasha' SMG";
+MERCH_FLAVOR_PPSH41               = "Give 'em some indigestion!";
+
+// PPSh-41 Drum Mag
+MERCH_CAT_PPSHDRUMMAG             = "RadTech Inc.";
+MERCH_TAG_PPSHDRUMMAG             = "PPSh-41 7.62mm Tokarev Drum Magazine";
+MERCH_FLAVOR_PPSHDRUMMAG          = "";
+
+// PPSh-41 Box Mag
+MERCH_CAT_PPSHBOXMAG              = "RadTech Inc.";
+MERCH_TAG_PPSHBOXMAG              = "PPSh-41 7.62mm Tokarev Box Magazine";
+MERCH_FLAVOR_PPSHBOXMAG           = "";
+
+// Savage 99
+MERCH_CAT_SAVAGE99                = "RadTech Inc.";
+MERCH_TAG_SAVAGE99                = "Savage 99 Lever-Action Rifle";
+MERCH_FLAVOR_SAVAGE99             = "Goin' big game huntin'?";
+
+// Sig-Cow
+MERCH_CAT_SIGCOW                  = "RadTech Inc.";
+MERCH_TAG_SIGCOW                  = "M-211 Sig-Cow";
+MERCH_FLAVOR_SIGCOW               = "Don't have a Cow, man? Then buy yourself one of these!";
+
+// Sig-Cow Mag
+MERCH_CAT_SIGCOWMAG               = "RadTech Inc.";
+MERCH_TAG_SIGCOWMAG               = "Sig-Cow Magazine";
+MERCH_FLAVOR_SIGCOWMAG            = "";
+
+// Single Action Revolver
+MERCH_CAT_SAREVOLVER              = "RadTech Inc.";
+MERCH_TAG_SAREVOLVER              = "Single Action Revolver";
+MERCH_FLAVOR_SAREVOLVER           = "This thing probably belonged to one of your ancestors. Hope it still shoots well.";
+
+// Snubnose Revolver
+MERCH_CAT_SNUBNOSE                = "RadTech Inc.";
+MERCH_TAG_SNUBNOSE                = "Detective Special";
+MERCH_FLAVOR_SNUBNOSE             = "Hands up! Grab air, you babies! Or I'll squeeze this thing, and I don't mean maybe!";
+
+// Sten Mk2
+MERCH_CAT_STENMK2                 = "RadTech Inc.";
+MERCH_TAG_STENMK2                 = "Sten Mk.2(S) Silenced SMG";
+MERCH_FLAVOR_STENMK2              = "I thought these things were mass produce...";
+
+// Stun Gun
+MERCH_CAT_STUNGUN                 = "RadTech Inc.";
+MERCH_TAG_STUNGUN                 = "'ShokStop' Stun Gun";
+MERCH_FLAVOR_STUNGUN              = "Don't taze me, bro!";
+
+// TT-33
+MERCH_CAT_TT33                    = "RadTech Inc.";
+MERCH_TAG_TT33                    = "TT-33 'Tokarev' Pistol";
+MERCH_FLAVOR_TT33                 = "Make them go blyat.";
+
+// TT-33 Mag
+MERCH_CAT_TT33MAG                 = "RadTech Inc.";
+MERCH_TAG_TT33MAG                 = "TT-33 7.62mm Tokarev Magazine";
+MERCH_FLAVOR_TT33MAG              = "";
+
+// 10mm Reloading Device
+MERCH_CAT_10MMRELOADER            = "RadTech Inc.";
+MERCH_TAG_10MMRELOADER            = "10mm Auto-Reloader";
+MERCH_FLAVOR_10MMRELOADER         = "Turns pistol ammo into better pistol ammo.";
+
+// .300 Savage Reloading Device
+MERCH_CAT_300SAVAGERELOADER       = "RadTech Inc.";
+MERCH_TAG_300SAVAGERELOADER       = ".300 Savage Auto-Reloader";
+MERCH_FLAVOR_300SAVAGERELOADER    = "Turns rifle ammo into Russian rifle ammo.";
+
+// 7.62 Tokarev Reloading Device
+MERCH_CAT_762TOKAREVRELOADER      = "RadTech Inc.";
+MERCH_TAG_762TOKAREVRELOADER      = "7mm Tokarev Auto-Reloader";
+MERCH_FLAVOR_762TOKAREVRELOADER   = "Turns pistol ammo into Russian pistol ammo.";
+
+// Dynamite
+MERCH_CAT_DYNAMITE                = "RadTech Inc.";
+MERCH_TAG_DYNAMITE                = "Dynamite";
+MERCH_FLAVOR_DYNAMITE             = "Do I look like a propsector?";
+
+// Micro-Cell
+MERCH_CAT_MICROCELL               = "RadTech Inc.";
+MERCH_TAG_MICROCELL               = "Micro-Cell";
+MERCH_FLAVOR_MICROCELL            = "For micro-zaps.";
